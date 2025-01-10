@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import RandomPokemon from './components/RandomPokemon';
 import './App.css';
 
 function App() {
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [currentPokemon, setCurrentPokemon] = useState('');
+
+  console.log('Current Pokemon:', currentPokemon);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Who's That Pokémon?</h1>
+      <button onClick={() => setIsCorrect(!isCorrect)}>
+        Toggle Silhouette
+      </button>
+      <RandomPokemon
+        isCorrect={isCorrect}
+        setCurrentPokemon={setCurrentPokemon}
+        setIsCorrect={setIsCorrect}
+      />
     </div>
   );
 }
