@@ -31,4 +31,6 @@ Limitations:
 - Very basic error handling.
 - Non persistent score.
 - Simple UI for core gameplay.
-
+- Nidoran (male) and Nidoran (female) register as 'nidoran-m' and 'nidoran-f' respectively.
+- Farfetch'd is registered as 'farfetchd'
+- Mr. Mime is registered as 'mr-mime'
