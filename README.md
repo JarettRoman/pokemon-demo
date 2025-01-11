@@ -34,3 +34,5 @@ Limitations:
 - Nidoran (male) and Nidoran (female) register as 'nidoran-m' and 'nidoran-f' respectively.
 - Farfetch'd is registered as 'farfetchd'
 - Mr. Mime is registered as 'mr-mime'
+
+See live: https://splendid-valkyrie-fbc8bd.netlify.app/
