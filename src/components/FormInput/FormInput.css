@@ -7,24 +7,24 @@
 
 .guess-input {
   padding: 0.5rem;
-  border: 2px solid #ddd;
+  border: 2px solid lightgray;
   border-radius: 0.25rem;
   font-size: 1rem;
 }
 
 .guess-input:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: lightskyblue;
 }
 
 .guess-input:disabled {
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   cursor: not-allowed;
 }
 
 .submit-button {
   padding: 0.5rem 1rem;
-  background-color: #2ecc71;
+  background-color: limegreen;
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -33,10 +33,10 @@
 }
 
 .submit-button:hover:not(:disabled) {
-  background-color: #27ae60;
+  background-color: forestgreen;
 }
 
 .submit-button:disabled {
-  background-color: #95a5a6;
+  background-color: darkgray;
   cursor: not-allowed;
 }

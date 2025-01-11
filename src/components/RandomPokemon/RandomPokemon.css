@@ -19,7 +19,7 @@
 .next-button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #3498db;
+  background-color: dodgerblue;
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -27,5 +27,5 @@
 }
 
 .next-button:hover {
-  background-color: #2980b9;
+  background-color: royalblue;
 }

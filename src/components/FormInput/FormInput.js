@@ -13,19 +13,22 @@ function FormInput({ onGuess, isCorrect }) {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="form-container">
-			<input
-				type="text"
-				value={guess}
-				onChange={(e) => setGuess(e.target.value)}
-				placeholder="Enter Pokemon Name"
-				disabled={isCorrect}
-				className="form-input"
-			/>
-			<button type="submit" className="form-button" disabled={isCorrect || !guess.trim()}>
-				Guess
-			</button>
-		</form>
+		!isCorrect && (
+			<form onSubmit={handleSubmit} className="form-container">
+				<input
+					autoFocus
+					type="text"
+					value={guess}
+					onChange={(e) => setGuess(e.target.value)}
+					placeholder="Enter Pokemon Name"
+					disabled={isCorrect}
+					className="form-input"
+				/>
+				<button type="submit" className="form-button" disabled={isCorrect || !guess.trim()}>
+					Guess
+				</button>
+				</form>
+		)
 	);
 }
 

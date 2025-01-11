@@ -41,7 +41,7 @@ function RandomPokemon({ isCorrect, setCurrentPokemon, setIsCorrect }) {
 			{isCorrect && (
 				<>
 					<br />
-					<button onClick={handleNext} className="next-button">
+					<button autoFocus onClick={handleNext} className="next-button">
 						Next Pokémon
 					</button>
 				</>
